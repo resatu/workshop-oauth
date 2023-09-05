@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop #2</title>
+    <script src="assets/scripts/main.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <h1>Workshop 2</h1>
+    <div class="wrapper">
+        <form class="loginForm" data-logout-view>
+            <fieldset>
+                <legend>Log In</legend>
+                <label class="mediumLabel" for="username">Username</label>
+                <input class="mediumInput" type="text" name="username" id="username" data-username>
+
+                <label class="mediumLabel" for="password">Password</label>
+                <input class="mediumInput" type="password" name="password" id="password" data-password>
+
+                <button class="primaryBtn" type="button" onclick="handleLogin()"> Login</button>
+            </fieldset>
+        </form>
+
+        <div class="loggedIn hidden" data-loggedin-view>
+            <h2>Welcome <span data-username></span></h2>
+            <button class="primaryBtn" type="button" onclick="handleLogout()">Logout</button>
+        </div>
+    </div>
+</body>
+
+</html>

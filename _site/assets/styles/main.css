@@ -1,0 +1,39 @@
+body {
+  background-color: #c0abab;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginForm fieldset {
+  display: flex;
+  flex-direction: row;
+}
+
+.mediumInput {
+  width: 200px;
+  height: 30px;
+  border:  1px solid #000;
+  border-radius: 5px;
+  margin: 10px 20px;
+}
+
+.mediumLabel {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.primaryBtn {
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
